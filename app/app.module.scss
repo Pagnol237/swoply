@@ -35,25 +35,27 @@ $placeHolder_form_color:#404241;
 .rigth_part{
     flex:1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    position: relative;
 }
 .image1{
-    width:16%;
+    width:44%;
     height:auto;
     z-index:100;
     position:absolute;
-    margin-top:120;
-    margin-right:200;
     filter: drop-shadow(17px 10px 18px rgb(0, 0, 0,0.7));
+    right: 150px;
+    bottom:50px;
 }
 
 .image2{
-    width:17%;
+    width:45%;
     height:auto;
     z-index:99;
     position:absolute;
     filter: drop-shadow(17px 10px 35px rgb(0, 0, 0,0.3));
+    right: 0px;
+       bottom:120px;
 }
 
 .text1{
@@ -102,4 +104,92 @@ $placeHolder_form_color:#404241;
     color: white;
     margin-left: 8px;
     border-radius: 5px;
+}
+
+// block2 style
+
+.block2_main{
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+}
+.subBlock2_A{
+    width: 50%;
+
+}
+.subBlock2_B{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.image3{
+    width: 60%;
+    height: auto;
+}
+.title{
+    color:$mainColor_green;
+    margin-bottom: 20px;
+}
+.block2_span_subtitle{
+    font-size: 18px;
+    font-weight: 700;
+    color: $fontBlack_color;
+}
+.block2_text{
+    color: $midleBlack_color;
+    font-size: 15px;
+}
+
+// block 3 styled
+
+.block3_main{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    background-color: #F8FAF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.block3_wraper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.idContainer{
+    width: 35px;
+    height: 35px;
+    background-color: $mainColor_green;
+    line-height: 35px;
+    border-radius: 55px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+.step_title{
+    color: $fontBlack_color;
+    margin-top: 15px;
+}
+
+.step_text{
+    color: $midleBlack_color;
+    font-size: 15px;
+    margin-top: 10px;
 }
