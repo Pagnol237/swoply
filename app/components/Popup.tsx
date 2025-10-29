@@ -17,7 +17,7 @@ function Popup() {
         return()=>clearTimeout(showBox);
     },[])
   return (
-    <div className={Style.pop_up_main} style={{visibility:show?'visible':'hidden'}} onClick={()=>{setShow(false);}}>
+    <div className={Style.pop_up_main} style={{visibility:show?'visible':'hidden'}}>
         <div  className={Style.pop_up_container}>
             <div className={Style.close_btn} onClick={()=>{setShow(false);}}>
                 <RxCross2  size={24}/>
