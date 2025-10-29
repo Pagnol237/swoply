@@ -25,6 +25,12 @@ function Block3() {
                 ))
             }
         </div>
+
+        <div className={Style.sondageText}>
+            Réponds à un court sondage (moins de 2 minutes)
+et t        ente de gagner une carte cadeau de 100 $
+        </div>
+        <div className={Style.Btn}>Je participe</div>
     </div>
   )
 }

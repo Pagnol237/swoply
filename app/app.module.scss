@@ -198,6 +198,40 @@ $placeHolder_form_color:#404241;
     margin-top: 10px;
 }
 
+.sondageText{
+    width: 45%;
+    color: $fontBlack_color;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.Btn{
+    padding: 10px 25px 10px 25px;
+    background-color: $mainColor_green;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+//footer
+
+.footerMain{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    background-color: $footer_color;
+    color: white;
+}
+
+
+
+
+//responsive design
 
 @media screen and (max-width:576px) {
 .block1_main{
@@ -224,7 +258,7 @@ $placeHolder_form_color:#404241;
     }
     .rigth_part{
         display: flex;   
-        width: 100%;          /* ou column selon ton besoin */
+        width: 100%;          
         position: relative;
         display: flex; 
         justify-content: center;
@@ -234,21 +268,21 @@ $placeHolder_form_color:#404241;
     }
 
     .image1{
-    position: absolute;           /* revient au flux normal */
-    width: 45%;                /* largeur originale de l’image */
-    height: auto;               /* conserve les proportions */              /* annule le décalage */
+    position: absolute;           
+    width: 45%;               
+    height: auto;                         
     bottom: 20;  
-    left: 50;             /* annule le décalage */
-    z-index: 100;              /* remet le z-index par défaut */
+    left: 50;             
+    z-index: 100;              
     filter: drop-shadow(10px 8px 7px rgb(0, 0, 0,0.5)); 
     }
 
     .image2{
-    position: static;           /* revient au flux normal */
-    width: 50%;                /* largeur originale de l’image */
-    height: auto;               /* conserve les proportions */              /* annule le décalage */
-    bottom: auto;               /* annule le décalage */
-    z-index: 99;              /* remet le z-index par défaut */
+    position: static;          
+    width: 50%;                
+    height: auto;                           
+    bottom: auto;              
+    z-index: 99;              
     filter: drop-shadow(17px 10px 25px rgb(0, 0, 0,0.4)); 
     margin-left: 100px;
     }
@@ -320,6 +354,21 @@ $placeHolder_form_color:#404241;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
+    }
+    .title{
+        text-align: center;
+    }
+
+    //footer
+
+    .sondageText{
+    width: 100%;
+
+    }
+    .Btn{
+        padding: 10px 25px 10px 25px;
+        width: 50%;
+        text-align: center;
     }
 
 }
