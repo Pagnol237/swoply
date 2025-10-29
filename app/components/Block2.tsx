@@ -1,12 +1,14 @@
+'use client'
 import React from 'react'
 import Style from "../app.module.scss";
 import Phone3 from "../../public/images/phone3.png"
 import Image from 'next/image';
+import { motion,easeIn,easeInOut} from "framer-motion";
 
 function Block2() {
   return (
     <div className={Style.block2_main}>
-        <div className={Style.subBlock2_A}>
+        <motion.div className={Style.subBlock2_A} initial={{opacity:0,x:-60}} whileInView={{opacity:1,x:0}} transition={{ease:easeIn,duration:0.7}}>
             <Image
             src={Phone3}
             alt='swoply app screen'
@@ -14,9 +16,9 @@ function Block2() {
             height={1366}
             className={Style.image3}
             />
-        </div>
+        </motion.div>
 
-        <div className={Style.subBlock2_B}>
+        <motion.div className={Style.subBlock2_B} initial={{opacity:0,x:60}} whileInView={{opacity:1,x:0}} transition={{ease:easeIn,duration:0.7}}>
 
             <h2 className={Style.title}>Pourquoi ce projet ?</h2>
             <p className={Style.block2_text}>
@@ -28,7 +30,7 @@ function Block2() {
 
             Grâce à un système de points de gratitude, chaque échange ou don te rapproche de réductions exclusives chez nos partenaires locaux.
             </p>
-        </div>
+        </motion.div>
 
     </div>
   )

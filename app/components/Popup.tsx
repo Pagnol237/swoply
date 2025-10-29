@@ -6,6 +6,7 @@ import Picture from '../../public/images/popup.png';
 import Link from 'next/link';
 import { RxCross2 } from "react-icons/rx";
 import { useState,useEffect } from 'react';
+import { motion,easeIn,easeInOut} from "framer-motion";
 
 function Popup() {
     const [show,setShow] = useState(false);
@@ -17,7 +18,7 @@ function Popup() {
         return()=>clearTimeout(showBox);
     },[])
   return (
-    <div className={Style.pop_up_main} style={{visibility:show?'visible':'hidden'}}>
+    <motion.div className={Style.pop_up_main} style={{visibility:show?'visible':'hidden'}} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <div  className={Style.pop_up_container}>
             <div className={Style.close_btn} onClick={()=>{setShow(false);}}>
                 <RxCross2  size={24}/>
@@ -45,7 +46,7 @@ function Popup() {
                     </Link>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -12,6 +12,7 @@ import { motion,easeIn,easeInOut} from "framer-motion";
 
 
 function block1() {
+    const MotionImage = motion(Image);
 
   const [email, setEmail] = useState<string>("");
   const [msg, setMsg] = useState<string>("");
@@ -46,7 +47,7 @@ function block1() {
   return (
 
     <div className={Style.block1_main}>
-        <div className={Style.logoContainer}>
+        <motion.div className={Style.logoContainer} initial={{opacity:0,y:-10}} whileInView={{opacity:1,y:0}} transition={{ease:easeIn,duration:0.7}}>
             <Image
             src={Logo}
             width={537}
@@ -54,7 +55,7 @@ function block1() {
             alt='logo swoply'
             className={Style.logo}
             />
-        </div>
+        </motion.div>
         <div className={Style.wrapper}>  
             <div className={Style.left_part}>
                 <motion.div initial={{opacity:0,y:10}} whileInView={{opacity:1,y:0}} transition={{ease:easeIn,duration:0.7}}>
@@ -88,26 +89,24 @@ function block1() {
                 </motion.div>
             </div>
             <div className={Style.rigth_part}>
-                <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1,x:0}} transition={{ease:easeInOut,duration:1}}>
-                    <Image
+                    <MotionImage
                     src={Phone2}
                         alt='wsoply screen image'
                         width={521}
                         height={1075}
                         className={Style.image1}
+                        initial={{opacity:1,x:-50,zIndex: 10}} whileInView={{opacity:1,x:0,zIndex: 10}} transition={{ease:easeInOut,duration:0.7}}
                     />
-                </motion.div>
 
-                <motion.div initial={{opacity:0,x:5}} whileInView={{opacity:1,x:0}} transition={{ease:easeIn,duration:0.7}}>   
-                    <Image
+                    <MotionImage
                     src={Phone1}
                     alt='wsoply screen image'
                     width={521}
                     height={1075}
                     className={Style.image2}
+                    initial={{opacity:0,x:50,zIndex: 9}} whileInView={{opacity:1,x:0,zIndex: 9}} transition={{ease:easeIn,duration:0.7}}
                     />
-                </motion.div> 
-            
+
 
             </div>
         </div>  
