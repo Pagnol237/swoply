@@ -34,8 +34,9 @@ function Block3() {
             href="https://docs.google.com/forms/d/e/1FAIpQLScVNlWl3L_XTcjxLfG_qUxMJkTwtwKnO0D9z_2tox3giaxQ4Q/viewform?usp=header"
             target='_blank'
             rel="noopener noreferrer"
+            className={Style.Btn}
         >
-            <div className={Style.Btn}>Je participe</div>
+            Je participe
         </Link>
         
     </div>
