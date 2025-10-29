@@ -229,6 +229,71 @@ $placeHolder_form_color:#404241;
 }
 
 
+//pop up style
+
+.pop_up_main{
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_up_container{
+    width: 50%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+}
+.pop_up_image{
+    width: 100%;
+    height: auto;
+}
+.pop_up_Text_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pop_up_Text{
+    width: 85%;
+    color: $footer_color;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+.pop_up_Btn{
+    background-color: $mainColor_green;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    padding: 12px;
+    width: 30%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.close_btn{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 10;
+    right: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
 
 
 //responsive design
@@ -369,6 +434,20 @@ $placeHolder_form_color:#404241;
         padding: 15px 25px 15px 25px;
         width: 70%;
         text-align: center;
+    }
+
+    //pop up
+
+    .pop_up_main{
+        padding: 30px;
+    }
+
+    .pop_up_container{
+        width: 100%;
+    }
+
+    .pop_up_Btn{
+    width: 70%;
     }
 
 }

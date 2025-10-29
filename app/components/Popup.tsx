@@ -1,0 +1,41 @@
+import React from 'react'
+import Style from "../app.module.scss";
+import Image from 'next/image';
+import Picture from '../../public/images/popup.png';
+import Link from 'next/link';
+import { RxCross2 } from "react-icons/rx";
+
+function Popup() {
+  return (
+    <div className={Style.pop_up_main}>
+        <div  className={Style.pop_up_container}>
+            <div className={Style.close_btn}>
+                <RxCross2  size={24}/>
+            </div>
+            <Image
+            src={Picture}
+            alt='pop up swoply image'
+            width={2000}
+            height={1051}
+            className={Style.pop_up_image}
+            />
+            <div className={Style.pop_up_Text_container}>
+                <p className={Style.pop_up_Text}>
+                    Réponds à un court sondage (moins de 2 minutes)<br/>
+                    <span style={{fontWeight:300,fontSize:20}}>et tente de gagner une carte cadeau de 100 $</span> 
+                </p>
+                    <Link 
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScVNlWl3L_XTcjxLfG_qUxMJkTwtwKnO0D9z_2tox3giaxQ4Q/viewform?usp=header"
+                        target='_blank'
+                        rel="noopener noreferrer"
+                        className={Style.pop_up_Btn}
+                    >
+                        Je participe
+                    </Link>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Popup
