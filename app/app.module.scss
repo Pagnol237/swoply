@@ -203,8 +203,8 @@ $placeHolder_form_color:#404241;
 .block1_main{
     width: 100%;
     height: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 50px;
     }
 
@@ -287,5 +287,27 @@ $placeHolder_form_color:#404241;
     }
     input::placeholder{
         text-align: center;
+    }
+    
+
+    //block 2
+
+    .block2_main{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+    .subBlock2_A{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+    .subBlock2_B{
+    width: 100%;
+    text-align: center;
     }
 }
