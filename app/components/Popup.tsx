@@ -1,15 +1,25 @@
+'use client'
 import React from 'react'
 import Style from "../app.module.scss";
 import Image from 'next/image';
 import Picture from '../../public/images/popup.png';
 import Link from 'next/link';
 import { RxCross2 } from "react-icons/rx";
+import { useState,useEffect } from 'react';
 
 function Popup() {
+    const [show,setShow] = useState(false);
+
+    useEffect(()=>{
+        const showBox = setTimeout(()=>{
+            setShow(true);
+        },5000)
+        return()=>clearTimeout(showBox);
+    },[])
   return (
-    <div className={Style.pop_up_main}>
+    <div className={Style.pop_up_main} style={{visibility:show?'visible':'hidden'}} onClick={()=>{setShow(false);}}>
         <div  className={Style.pop_up_container}>
-            <div className={Style.close_btn}>
+            <div className={Style.close_btn} onClick={()=>{setShow(false);}}>
                 <RxCross2  size={24}/>
             </div>
             <Image
