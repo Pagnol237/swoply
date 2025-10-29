@@ -39,6 +39,7 @@ function Popup() {
                         target='_blank'
                         rel="noopener noreferrer"
                         className={Style.pop_up_Btn}
+                        onClick={()=>{setShow(false);}}
                     >
                         Je participe
                     </Link>
