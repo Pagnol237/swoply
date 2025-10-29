@@ -16,7 +16,7 @@ function block1() {
             width={537}
             height={239}
             alt='logo swoply'
-            style={{width:"auto",height:"70px",paddingTop:10}}
+            className={Style.logo}
             />
         </div>
         <div className={Style.wrapper}>  
