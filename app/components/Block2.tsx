@@ -20,7 +20,7 @@ function Block2() {
 
             <h2 className={Style.title}>Pourquoi ce projet ?</h2>
             <p className={Style.block2_text}>
-                <span className={Style.block2_span_subtitle}>Donner une nouvelle vie aux objets, c’est bon pour la planète… et pour toi.</span><br/><br/>
+                <span className={Style.block2_span_subtitle}>Donner une nouvelle vie aux objets, c’est bon pour la planète et pour toi.</span><br/><br/>
 
             Chaque année, des tonnes d’objets encore en parfait état sont jetées, faute d’avoir trouvé preneur.
             Chez Swoply, nous croyons qu’un objet inutilisé chez toi peut encore faire le bonheur de quelqu’un d’autre.

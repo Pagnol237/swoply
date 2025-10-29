@@ -2,6 +2,7 @@ import React from 'react'
 import Style from "../app.module.scss";
 import data from '@/data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Block3() {
   return (
@@ -29,7 +30,14 @@ function Block3() {
         <div className={Style.sondageText}>
             Réponds à un court sondage (moins de 2 minutes) et tente de gagner une carte cadeau de 100 $
         </div>
-        <div className={Style.Btn}>Je participe</div>
+        <Link 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScVNlWl3L_XTcjxLfG_qUxMJkTwtwKnO0D9z_2tox3giaxQ4Q/viewform?usp=header"
+            target='_blank'
+            rel="noopener noreferrer"
+        >
+            <div className={Style.Btn}>Je participe</div>
+        </Link>
+        
     </div>
   )
 }
