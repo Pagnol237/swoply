@@ -22,7 +22,7 @@ function Popup() {
             <div className={Style.pop_up_Text_container}>
                 <p className={Style.pop_up_Text}>
                     Réponds à un court sondage (moins de 2 minutes)<br/>
-                    <span style={{fontWeight:300,fontSize:20}}>et tente de gagner une carte cadeau de 100 $</span> 
+                    <span style={{fontWeight:300,fontSize:17}}>et tente de gagner une carte cadeau de 100 $</span> 
                 </p>
                     <Link 
                         href="https://docs.google.com/forms/d/e/1FAIpQLScVNlWl3L_XTcjxLfG_qUxMJkTwtwKnO0D9z_2tox3giaxQ4Q/viewform?usp=header"
