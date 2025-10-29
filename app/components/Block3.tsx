@@ -36,7 +36,7 @@ function Block3() {
             rel="noopener noreferrer"
             className={Style.Btn}
         >
-            Je participe
+            Je participe...
         </Link>
         
     </div>
