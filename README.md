@@ -39,5 +39,5 @@ L’objectif de cette landing page est de présenter le concept, les fonctionnal
 
 ---
 
-## 📂 Structure du projet
+
 
