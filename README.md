@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Swoply – Landing Page officielle
 
-## Getting Started
+Swoply est une plateforme innovante de gestion et d’échange d’objets du quotidien.  
+Ce dépôt contient la **landing page officielle** du projet, construite avec **Next.js**, **TypeScript** et **Supabase**.
 
-First, run the development server:
+L’objectif de cette landing page est de présenter le concept, les fonctionnalités et les avantages de l’application, tout en permettant de collecter les premiers utilisateurs intéressés.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Fonctionnalités
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🖥️ **Interface moderne** basée sur Next.js App Router  
+- ⚡ **Performance optimisée** (SSR/ISR, images optimisées, SEO friendly)
+- 📱 **Design responsive** (mobile, tablette, desktop)
+- 🔗 **Intégration Supabase**  
+  - Gestion des données  
+  - API sécurisée  
+- 🎨 **UI propre et minimaliste**  
+- 🌐 Déploiement rapide sur Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Stack technique
 
-To learn more about Next.js, take a look at the following resources:
+| Technologie | Usage |
+|------------|-------|
+| **Next.js 14+** | Framework React pour le web (App Router) |
+| **React** | UI Components |
+| **TypeScript** | Typage statique et sécurité |
+| **Supabase** | Backend-as-a-Service (auth, database, API) |
+| **SCSS / CSS Modules** | Styles modulaires |
+| **Vercel** | Hébergement et CI/CD |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Aperçu du projet
 
-## Deploy on Vercel
+> https://swoply.ca/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Structure du projet
+
